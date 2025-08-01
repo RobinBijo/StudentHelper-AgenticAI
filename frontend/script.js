@@ -31,7 +31,7 @@ document.getElementById('studyForm').addEventListener('submit', async function(e
   const prompt = `Create a study plan that follows the SMART framework and of course don't have to explain the SMART framework.I am a student who wants to ${goal} in the subject of ${subject}, studying ${hours} hours per day.Format it using markdown with bold section headings and bullet points.`;
 
   try {
-    const response = await fetch('http://localhost:3000/generate', {
+    const response = await fetch('https://studenthelper-agenticai.onrender.com/generate', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

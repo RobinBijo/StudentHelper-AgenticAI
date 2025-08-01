@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-require('dotenv').config(); // ✅ load env variables
 const mySecret = process.env.GROQ_API_KEY;
 const app = express();
 app.use(cors());
